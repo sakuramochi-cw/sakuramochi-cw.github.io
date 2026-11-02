@@ -172,3 +172,41 @@ body.menu-open .site-drawer { transform: translateX(0); visibility: visible; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
 }
+
+
+/* CardWirth個人サイト風：文章と更新情報を主役にした別案 */
+.home-classic { padding: 58px 23px 110px; }
+.home-container { width: min(100%, 760px); margin: 0 auto; }
+.welcome-section { text-align: center; padding: 32px 12px 55px; }
+.welcome-section h1 { font-size: clamp(24px, 4.4vw, 32px); color: var(--pink-deep); font-weight: 550; letter-spacing: .06em; margin: 12px 0 13px; }
+.welcome-message { color: var(--subtle); font-size: 13px; line-height: 2.1; margin: 0 0 24px; }
+.text-feature-link { display: inline-block; color: var(--pink-deep); text-decoration: none; background: var(--pink-light); border: 1px solid #efd8e2; border-radius: 7px; padding: 9px 22px; font-size: 13px; font-weight: 600; }
+.text-feature-link:hover { background: #f1dbe4; }
+.classic-section { margin: 0 0 40px; }
+.classic-section h2 { font-size: 16px; font-weight: 650; line-height: 1.6; padding: 0 0 12px; border-bottom: 1px solid #e9cdd9; color: var(--pink-deep); margin: 0 0 19px; letter-spacing: .025em; }
+.classic-section h2 > span { color: #d4a0b3; font-size: 17px; margin-right: 9px; }
+.classic-section h2 small { color: var(--subtle); font-weight: 400; font-size: 11px; margin-left: 12px; }
+.classic-section p { line-height: 2.2; font-size: 13px; color: #7e7177; margin: 0 3px 12px; }
+.classic-section p a { color: var(--pink-deep); text-underline-offset: 3px; }
+.news-list { list-style: none; margin: 0; padding: 0 4px; }
+.news-list li { display: grid; grid-template-columns: 116px 1fr; gap: 9px; padding: 10px 2px 13px; font-size: 13px; color: #7e7177; border-bottom: 1px dashed #f0e3e8; line-height: 1.9; }
+.news-list time { color: #aa8192; font-variant-numeric: tabular-nums; }
+.classic-section .small-help { color: #b19ca5; margin-top: 12px; font-size: 11px; }
+.scenario-index { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; border-top: 1px solid var(--line); padding: 16px 3px 24px; }
+.scenario-index span { font-size: 10px; color: #baa0ab; letter-spacing: .12em; margin-right: 5px; }
+.scenario-index a { color: var(--pink-deep); font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.scenario-item { scroll-margin-top: 24px; }
+.scenario-item .scenario-meta { margin: -2px 0 12px; color: #b18899; font-size: 12px; }
+@media (max-width: 600px) {
+  .home-classic { padding: 36px 22px 70px; }
+  .welcome-section { padding: 24px 0 48px; }
+  .welcome-section h1 { font-size: 24px; }
+  .classic-section { margin-bottom: 35px; }
+  .news-list li { grid-template-columns: 1fr; gap: 0; }
+  .scenario-index { gap: 10px 14px; }
+  .scenario-index span { flex-basis: 100%; }
+}
+
+/* External link to the CardWirth official fansite download page */
+.drawer-nav .external-nav-link { margin-top: 12px; border-top: 1px solid #efdee6; border-radius: 0; padding-top: 24px; }
+.about-section p a { color: var(--pink-deep); text-underline-offset: 3px; }
