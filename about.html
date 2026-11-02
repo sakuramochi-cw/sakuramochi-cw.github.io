@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffafd">
+  <meta name="description" content="さくらもちのCardWirthシナリオ置き場について。">
+  <title>このサイトについて | さくらもちのシナリオ置き場</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="site-brand" href="index.html" aria-label="さくらもちのシナリオ置き場 ホーム">
+        <span class="brand-flower" aria-hidden="true">✿</span>
+        <span>さくらもち</span>
+      </a>
+      <button class="menu-trigger" type="button" aria-label="メニューを開く" aria-controls="site-drawer" aria-expanded="false" data-menu-open>
+        <span class="burger-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </header>
+
+    <main id="main-content" class="content-main about-main">
+      <div class="page-heading">
+        <p class="eyebrow">ABOUT</p>
+        <h1>このサイトについて</h1>
+      </div>
+      <section class="about-section">
+        <h2><span aria-hidden="true">✿</span> ごあいさつ</h2>
+        <p>こんにちは、さくらもちです。<br>このサイトは、自作のCardWirthシナリオを置いておくための小さな場所です。</p>
+      </section>
+      <section class="about-section">
+        <h2><span aria-hidden="true">✿</span> ダウンロードについて</h2>
+        <p>配布ファイルはGoogleドライブに置いています。作品ごとの利用条件や素材のクレジットは、各シナリオに同梱のReadMeをご確認ください。</p>
+        <p class="about-small">※ このページは個人が運営する非公式のファンサイトです。</p>
+      </section>
+      <a class="text-back-link" href="scenarios.html">← シナリオ一覧へ戻る</a>
+    </main>
+
+    <footer class="site-footer"><span aria-hidden="true">✿</span> <span>© sakuramochi</span></footer>
+  </div>
+
+  <button class="drawer-backdrop" type="button" aria-label="メニューを閉じる" data-menu-backdrop hidden></button>
+  <aside class="site-drawer" id="site-drawer" aria-label="サイトメニュー" aria-hidden="true" inert>
+    <div class="drawer-header">
+      <span class="drawer-brand"><span aria-hidden="true">✿</span> さくらもち</span>
+      <button class="drawer-close" type="button" aria-label="メニューを閉じる" data-menu-close>×</button>
+    </div>
+    <nav class="drawer-nav" aria-label="メインナビゲーション">
+      <a href="index.html"><span>01</span> ホーム</a>
+      <a href="scenarios.html"><span>02</span> シナリオ一覧</a>
+      <a href="about.html" aria-current="page"><span>03</span> このサイトについて</a>
+    </nav>
+    <p class="drawer-caption">a little place for CardWirth ♡</p>
+  </aside>
+</body>
+</html>
