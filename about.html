@@ -8,19 +8,12 @@
   <title>このサイトについて | さくらもちのシナリオ置き場</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="site-shell">
-    <header class="site-header">
-      <a class="site-brand" href="index.html" aria-label="さくらもちのシナリオ置き場 ホーム">
-        <span class="brand-flower" aria-hidden="true">✿</span>
-        <span>さくらもち</span>
-      </a>
-      <button class="menu-trigger" type="button" aria-label="メニューを開く" aria-controls="site-drawer" aria-expanded="false" data-menu-open>
-        <span class="burger-lines" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-    </header>
+    <header class="site-header" data-site-header></header>
 
     <main id="main-content" class="content-main about-main">
       <div class="page-heading">
@@ -43,19 +36,6 @@
     <footer class="site-footer"><span aria-hidden="true">✿</span> <span>© sakuramochi</span></footer>
   </div>
 
-  <button class="drawer-backdrop" type="button" aria-label="メニューを閉じる" data-menu-backdrop hidden></button>
-  <aside class="site-drawer" id="site-drawer" aria-label="サイトメニュー" aria-hidden="true" inert>
-    <div class="drawer-header">
-      <span class="drawer-brand"><span aria-hidden="true">✿</span> さくらもち</span>
-      <button class="drawer-close" type="button" aria-label="メニューを閉じる" data-menu-close>×</button>
-    </div>
-    <nav class="drawer-nav" aria-label="メインナビゲーション">
-      <a href="index.html"><span>01</span> ホーム</a>
-      <a href="scenarios.html"><span>02</span> シナリオ一覧</a>
-      <a href="about.html" aria-current="page"><span>03</span> このサイトについて</a>
-<a class="external-nav-link" href="https://cardwirth.net/office/download.php" target="_blank" rel="noopener noreferrer"><span>↗</span> CardWirth本体DL（公式）</a>
-    </nav>
-    <p class="drawer-caption">a little place for CardWirth ♡</p>
-  </aside>
+  <div data-site-menu></div>
 </body>
 </html>

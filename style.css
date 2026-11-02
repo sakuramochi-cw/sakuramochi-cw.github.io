@@ -40,12 +40,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid #c67a9d; outline-offs
   background: rgba(255, 254, 254, .96);
   border-bottom: 1px solid var(--line);
 }
-.site-brand {
-  display: inline-flex; align-items: center; gap: 10px;
-  color: var(--pink-deep); text-decoration: none;
-  font-weight: 650; font-size: 17px; letter-spacing: .1em;
+.header-social-link {
+  display: grid; place-items: center;
+  width: 44px; height: 44px; border-radius: 10px;
+  background: #fff; color: #000; text-decoration: none;
 }
-.brand-flower { color: #d99eb5; font-size: 21px; line-height: 1; }
 .menu-trigger {
   display: grid; place-items: center;
   width: 44px; height: 44px;
@@ -153,7 +152,6 @@ body.menu-open .site-drawer { transform: translateX(0); visibility: visible; }
 .drawer-caption { margin-top: auto; padding-top: 18px; border-top: 1px solid #efdee6; text-align: center; color: #b8a1ab; font-size: 11px; letter-spacing: .04em; }
 @media (max-width: 600px) {
   .site-header { height: 66px; padding: 0 19px; }
-  .site-brand { font-size: 15px; }
   .hero { padding: 85px 24px 80px; }
   .hero h1 { font-size: 29px; }
   .mobile-break { display: block; }
