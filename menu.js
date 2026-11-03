@@ -22,7 +22,7 @@
       <nav class="drawer-nav" aria-label="メインナビゲーション">
         <a href="index.html"><span>01</span> ホーム</a>
         <a href="scenarios.html"><span>02</span> シナリオ一覧</a>
-        <a href="about.html"><span>03</span> このサイトについて</a>
+        <a href="about.html"><span>03</span> ご利用案内</a>
       </nav>
       <p class="drawer-caption">a little place for CardWirth ♡</p>
     </aside>

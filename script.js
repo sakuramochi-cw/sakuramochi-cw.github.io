@@ -1,5 +1,4 @@
 // 右から開くオフキャンバスメニュー。
-// GitHub Pagesでそのまま動きます（ライブラリ不要）。
 (() => {
   const openButton = document.querySelector('[data-menu-open]');
   const closeButton = document.querySelector('[data-menu-close]');
